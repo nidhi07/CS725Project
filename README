@@ -1,0 +1,31 @@
+TEAM MEMBERS
+Vijayalakshmi Vedantham 163050006
+Vertika Srivatsava	163050007
+Sakshi Maskara		163050041
+Nidhi Singh		163059004
+
+MODELS
+Extra Trees Classifier		et.py
+Random Forest Classifier	rf.py
+XGBoost Classifer		xgboost.py	
+Data preprocessing		data_preprocessing.py
+
+HOW TO RUN
+Initially all the 5 data files log_feature.csv, event_type.csv, resource_type.csv, severity_type.csv, test.csv, train.csv into a folder called data/. 
+
+Run the data preprocessing as python data_preprocessing.py 
+
+The data preprocessing will create 4 new files- X_train.csv, X_test.csv, y_train.csv, y_test.csv in the data/ folder which are used by the model for fitting and prediction.
+
+Then can test on any model as you wish
+
+python et.py 
+This will generate a file et_output.csv
+
+python rf.py
+This will generate a file rf_output.csv
+
+python xgboost.py
+This will generate a file xgb_output.csv
+XGBoost needs to be installed before one can run this file
+Install XGBoost using sudo pip install xgboost
